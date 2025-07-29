@@ -1,0 +1,453 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout page="home" bodyClass="home-gradient">
+  <div class="content-wrapper">
+    
+    <section class="hero-section">
+      <img src="/erick-photo.jpg" alt="Erick Schulz" class="profile-photo" />
+      <div class="hero-text"> 
+        <h1>Full-Stack Scientist</h1>
+        <p>I'm Erick Schulz, a computational science engineer with a PhD in mathematics, bridging the gap between mathematical research and tangible technology with high-performance software.</p>
+      </div>
+    </section>
+
+    <section class="expertise-grid">
+      <div 
+class="expertise-card">
+        <h3>Applied Mathematics</h3>
+        <p>Expert knowledge of <strong>numerical methods</strong> to solve ODEs/DAEs and PDEs arising from real-world engineering problems.</p>
+        <a href="#applied-math-details" class="details-link">More <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="expertise-card">
+        <h3>Product Development</h3>
+        <p>Experience building state-of-the-art solvers/tools packaged into ready-to-use and <strong>user-friendly features/products</strong>.</p>
+        <a href="#product-dev-details" class="details-link">More <i class="fas fa-arrow-right"></i></a>
+    
+  </div>
+      <div class="expertise-card">
+        <h3>Research</h3>
+        <p>Years of research experience.
+<strong>Published peer-reviewed</strong> research and presented at international conferences.</p>
+        <a href="#research-details" class="details-link">More <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="expertise-card">
+        <h3>Leadership</h3>
+        <p><strong>Lead a team</strong> of talented professional scientists.
+Supervised academic theses in collaboration with ETH Zurich.</p>
+        <a href="#my-job" class="details-link">More <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="expertise-card">
+        <h3>Teaching</h3>
+        <p><strong>Lecturer at ETH Zurich</strong> of the mandatory advanced CSE course Numerical Methods for PDEs starting from 2026.</p>
+        <a href="#teaching-details" class="details-link">More <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="expertise-card">
+        <h3>Funk</h3>
+ 
+         <p><strong>Forward-looking software developer</strong> that enjoys exploring new development tooling and is <strong>eager to learn</strong>.</p>
+        <a href="#funk-details" class="details-link">More <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <section id="my-job" class="cta-section">
+      <div class="cta-text">
+        <h2>My Job</h2>
+          <p>As <strong>Head of Scientific Software Development</strong> at Plexim, I lead our research division, currently focusing on core solver technology and strategic R&D 
+for the next-generation of simulation tools/products for power-electronics systems design and validation.</p>
+      </div>
+      <div class="cta-action">
+        <a href="/cv" class="button green-button"><i class="fas fa-file-alt"></i> View Full Experience</a>
+      </div>
+    </section>
+
+    <section class="expertise-details-wrapper">
+      <div id="applied-math-details" class="details-section">
+        <h2>Applied Mathematics</h2>
+          <p>
+              My expertise in 
+numerical methods for partial differential equations, such as <strong>finite element methods (FEM)
+              and boundary element methods (BEM)</strong>, stems originally from my studies and ongoing teaching duties (see below).
+<br><br> During my <strong>PhD</strong>, I carried out research at the interface between <strong>numerical methods and geometry</strong>.
+The development of new models for electromagnetism based on the Hodge-Dirac and
+              Hodge-Laplace operators on manifolds led to surprising discoveries about the structure of first-kind boundary integral equations.
+Follow 
+              the link below to read more about it.
+<br><br>My collaboration with Ralf Hiptmair continues to this day, and I am looking foward to new exciting research and discoveries.
+<br><br> For more information on my current work on numerical methods for <strong>differential algebraic equations (DAEs)</strong> and <strong>optimization</strong> applied to <strong>circuit simulation</strong>,
+              see about R&D below and be on the look-out for the release of PLECS 5.0!
+</p>
+
+          <div class="button-group">
+              <a href="/phd_preface" class="button green-button"><i class="fas fa-book-open"></i> Read my PhD Preface</a>
+              <a href="https://scholar.google.com/citations?user=_46eNUcAAAAJ&hl=en" class="button green-button"><i class="fas fa-graduation-cap"></i> Publications</a>
+          </div>
+      </div>
+      <div id="product-dev-details" class="details-section">
+        <h2>Product Development</h2>
+          <p>Over the past 
+years, my most significant project has been developing a new <strong>SPICE solver</strong> as part of Plexim's contribution to PowerizeD, a large consortium project 
+              partially funded by Horizon Europe (for research and innovation).
+Everything, 
+              from the <strong>simulation engine to the architecture, the parser, the UI integration and more</strong>, has been written from scratch and re-invented by a team of very
+              talented scientists and software engineers.
+The new product redefines state-of-the-art and enables a type of transient analysis simulation (of mixed-signal circuits
+              and power-electronic systems) that hasn't been previously possible with existing solutions.
+</p>
+          <p>
+              During my early days at Plexim, I worked on thermal modeling, particularly on <strong>surrogate models</strong> for thermal paths in semicondutors.
+Since then, I have been periodically asked to <strong>fit</strong>, or re-fit with better model identification, thermal networks to impedance data.
+So I recently made a simple Python package that application engineers can use to proceed with their thermal networks alchemy.
+</p>
+          <p>
+              Another side project that I have been enjoying a lot recently is the implementation of a native feature in the software PLECS that works
+              like Telescope in Neovim, Projectile in Emacs, or Spotlight and Raycast on macOS, for engineers to supercharge their workflow without having to be superusers.
+It allows them
+              to quickly <strong>fuzzy-search</strong> from anywhere their .plecs model files, launch commands and open tools such as the documentation and integrated console all within one search bar, greatly
+              increasing discoverability of the software's feature.
+</p>
+          <div class="button-group">
+              <a href="https://thermal-network.pages.dev/" target="_blank" rel="noopener noreferrer" class="button green-button">
+                  <i class="fas fa-file-alt"></i>
+                  <span>Thermal Network - Docs</span>
+              </a>
+              
+<a href="https://github.com/erickschulz/thermal-network" target="_blank" rel="noopener noreferrer" class="button green-button">
+                  <i class="fab fa-github"></i>
+                  <span>Thermal Network - Repo</span>
+              </a>
+          </div>
+      </div>
+      <div id="research-details" class="details-section">
+        <h2>Research</h2>
+       
+    <p>Aside from ongoing collaboration with Ralf Hiptmair at ETH Zurich, my main area of research in the past couple years has been solvers for <strong>differential
+           algebraic equations (DAEs)</strong>, as they arise from circuit models and more generally multi-physics systems.
+<br><br> Building robust <strong>simulation software</strong> for power electronics is challenging, because the high-frequency switching of power semiconductors lead to transients
+           that are extreme for double-precision floating-point arithmetic and system-level models cause multi-scale dynamics.
+PLECS has established itself as the leading simulation 
+           software in the field of power electronics.
+It has done so by promoting ideal switch models. Despite discontinuities being, as one could say, the worst form of nonlinearity, PLECS cleverly rely on its consequences
+           to perform very robust state-space simulation.
+High-order integration and avoiding parasitic effects lead to much faster system-level simulations than what would be possible
+           with a typical SPICE-like circuit solver.
+<br><br> However, it is true that parasitic effects during switching may also be relevant to design engineers.
+This is why our team has been developing a <strong>new 
+           mixed-formulation mixed-signal multi-physics DAE solver</strong> that integrates the best of both worlds.
+Within the elegant UI of PLECS, 
+           users will be able to run different simulation types without having to reproduce their 
+           complex schematics in another tool, greatly easing their workflow.
+In order to acheive this, our team has developed new algorithms and modernized the established technology
+           with contemporary numerical methods that were not previously used in the context of circuit simulation.
+<br><br> I am glad to say that our team has also contributed to the numerical method used in the Nanostep solver, 
+         which allows nano-seconds stepsize for real-time simulation of some important circuit topologies on the RT-box (our FPGA platform).
+</p>
+          <div class="button-group">
+              <a href="https://www.plexim.com/" class="button green-button"><i class="fas fa-external-link-alt"></i> Plexim's Website</a>
+              <a href="https://scholar.google.com/citations?user=_46eNUcAAAAJ&hl=en" class="button green-button"><i class="fas fa-graduation-cap"></i> Publications</a>
+          </div>
+      </div>
+      <div id="teaching-details" class="details-section">
+        <h2>Teaching</h2>
+        <p>The foundational knowledge about numerical methods
+   
+        for PDEs of recent CSE graduates of ETH Zurich often comes from a dense mandatory course which my colleague Oliver Rietmann and 
+              I contributed in building with Prof. Ralf Hiptmair during our years at ETH.
+At the time, we managed and worked with a team of student
+              developers to build a collection of ~65 simulation and optimization algorithms ranging from thermal phenomena, conservation laws, waves,
+              electrostatics, force calculations, error estimators, convergence analysis and more.
+As of today, development was moved to
+              an internal gitlab repository.
+<br><br>To see an older (unfortunatly stale) version, follow the link below. Stay tuned for (possibly) an upcoming re-release.
+Starting from 2026, I will be replacing Ralf in teaching the course as a <strong>lecturer at ETH Zurich</strong>.</p>
+        <a href="https://github.com/erickschulz/NPDECODES" class="button green-button"><i class="fas fa-code"></i> View Course</a>
+      </div>
+      <div id="funk-details" class="details-section">
+        <h2>Funk</h2>
+          <p>
+              I love to learn, whether it's about new math, new science or new software technology.
+Thinking about how to improve power-electronics engineers'
+              toolkit made me question my own software development tools.
+I wondered how to improve my workflow, and how the tools I enjoyed could in turn 
+              help engineers using our software (for e.g., see the search feature mentioned under Product Development).
+<br><br> A couple months ago, this lead me to neovim, tmux, aerospace and a few other tools I am currently still lost in exploring.
+This aligned nicely with my goal to learn how to work with LLM-assisted coding environment and tools.
+AI has made writing configuration files for local/personal tools faster and made it easier for busy professionals to express
+              their creativity through their own personalized setups.
+<br><br> If you are curious to see why I am currently re-learning how to type, check out my keyboard layout by following the link below.
+</p>
+          <div class="button-group">
+              <a href="https://github.com/erickschulz" target="_blank" rel="noopener noreferrer" class="button green-button">
+                  <i class="fab fa-github"></i>
+                  <span>My GitHub Page</span>
+              </a>
+              <a 
+href="https://configure.zsa.io/voyager/layouts/Zl9ro/6a3wrn/0" class="button green-button"><i class="fas fa-keyboard"></i> Keyboard Layout</a>
+          </div>
+      </div>
+    </section>
+
+
+    <section class="cta-section">
+      <div class="cta-text">
+        <h2>Let's build something great.</h2>
+        <p>I'm always interested in new ideas and collaborations.</p>
+      </div>
+      <div class="cta-action">
+        <a href="/contact" class="button green-button"><i class="fas fa-envelope"></i>&nbsp;Contact Me</a>
+      </div>
+  
+  </section>
+  </div>
+</Layout>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+  .content-wrapper {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 6rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+gap: 6rem;
+  }
+  .hero-section {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    text-align: left;
+    opacity: 0;
+transform: translateY(20px);
+    animation: fadeIn 1.5s 0.2s ease-out forwards;
+  }
+  .profile-photo {
+    width: 180px;
+    height: 180px;
+border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+  .hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin: 0;
+}
+  .hero-text p {
+    font-size: 1.3rem;
+    color: var(--text-secondary);
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px);
+}
+    to { opacity: 1; transform: translateY(0);
+}
+  }
+  .expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+  .expertise-card {
+    display: flex;
+    flex-direction: column;
+}
+  .expertise-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 0;
+}
+  .expertise-card p {
+    flex-grow: 1;
+  }
+  .details-link {
+    display: inline-flex;
+align-items: center;
+    margin-top: 1.5rem;
+    color: #416b5c; /* Green color */
+    text-decoration: none;
+    font-weight: 500;
+transition: color 0.2s ease;
+  }
+  .details-link:hover {
+    color: #2a453a;
+/* Darker green on hover */
+  }
+  .details-link i {
+    margin-left: 0.5rem;
+transition: transform 0.2s ease;
+  }
+  .details-link:hover i {
+    transform: translateX(5px);
+}
+
+  .card {
+    background: var(--card-background);
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+}
+  .card h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    line-height: 1.2;
+}
+  .card p {
+      margin-bottom: 0;
+}
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+border-radius: 999px;
+    font-weight: 500;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  .button:hover {
+    transform: scale(1.05);
+}
+  .button i {
+    margin-right: 0.5em;
+  }
+  .button-group {
+    display: flex;
+flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  .button-icon {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.5em;
+}
+  .button-group .button span {
+    display: inline-block;
+  }
+  .card-cta-layout {
+    display: flex;
+justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  .card-text p {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    line-height: 1.5;
+margin-top: 1rem;
+  }
+  .card-action .button {
+    white-space: nowrap;
+}
+  .cta-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    text-align: left;
+    padding: 3rem;
+    background-color: #416b5c;
+    border-radius: 20px;
+
+  }
+  .cta-text h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #ffffff;
+
+  }
+  .cta-text p {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0.5rem 0 0 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+
+  }
+  .cta-action .button {
+    white-space: nowrap;
+  }
+  a.button.green-button {
+    background-color: #416b5c;
+}
+
+  .cta-section .button.green-button {
+    background-color: #ffffff;
+    color: #416b5c;
+  }
+
+  .cta-section .button.green-button:hover {
+    background-color: #f0f0f0;
+  }
+
+  .expertise-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+  .details-section {
+    border-top: 1px solid var(--border);
+    padding-top: 2rem;
+}
+  .details-section h2 {
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+}
+  .details-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    max-width: 80ch;
+    margin-bottom: 1.5rem;
+}
+
+  @media (max-width: 768px) {
+    html {
+      scroll-padding-top: 4rem;
+}
+    .content-wrapper {
+      padding: 4rem 1.5rem;
+      gap: 4rem;
+}
+    .hero-section {
+      flex-direction: column;
+      text-align: center;
+}
+    .hero-text h1 { font-size: 2.5rem; }
+    .hero-text p { font-size: 1.125rem;
+}
+    .profile-photo { width: 150px; height: 150px;
+}
+    .card-cta-layout,
+    .cta-section {
+      flex-direction: column;
+      text-align: center;
+gap: 1.5rem;
+    }
+    .card-text, .cta-text {
+        margin-bottom: 1rem;
+}
+    .cta-text h2, .card-cta-layout h2 { font-size: 2rem;
+}
+
+    .button-group {
+      flex-direction: column;
+      align-items: stretch;
+}
+    .button {
+      width: 100%;
+      box-sizing: border-box;
+/* Ensures padding is included in the width */
+      border-radius: 8px;
+      padding: 0.8rem 1.5rem;
+}
+  }
+</style>
