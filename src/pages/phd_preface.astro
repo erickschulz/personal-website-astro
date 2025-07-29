@@ -7,7 +7,7 @@ import Layout from '../layouts/Layout.astro';
       <div class="card">
         <div class="card-text">
           <blockquote class="quote">
-            <p>“If you are receptive and humble, mathematics will lead you by the hand.”</p>
+            <p>"If you are receptive and humble, mathematics will lead you by the hand."</p>
             <footer>— Paul Dirac</footer>
           </blockquote>
           <h2>Preface of my PhD Thesis</h2>
@@ -16,7 +16,7 @@ This quotation from Paul Dirac is quite à-propos. When I started working with R
 
 <p>In 2020, we had a new vision for the thesis after we made a surprising discovery: first-kind boundary integral operators for Hodge–Dirac operators arising from the de Rham complex are Hodge–Dirac operators themselves in trace de Rham complexes. It is sometimes difficult to draw a line between what can justifiably be called a discovery versus an observation. What best describes the creative drive behind the most exciting developments of this thesis is a combination of meticulousness, perceptiveness and luck. On that account, at least two things are worth mentioning. First, there are various ways in which boundary integral equations for the Hodge–Dirac operator can be written, especially in the fairly unfriendly setting of classical vector calculus used in Chapter 3, where we initially noticed the correspondence. Without intuition and awareness, we might not have uncovered that particular connection between the studied boundary value problems and their associated boundary integral equations. Our work on the Hodge–Dirac operator would then have been somewhat of a missed opportunity. Secondly, we dared to believe that this hinted at a deeper structure that was worth investigating. Thus, we embarked on a study of boundary integral equations for Hodge–Laplace and Hodge–Dirac operators on manifolds, which led to the boundary integral exterior calculus described in the last chapter bearing the same title as this thesis.</p>
 
-<p>I believe that readers will agree that the few selected articles assembled in this thesis together make for a sound whole. It is divided in three parts. To each chapter corresponds a different article. The articles are ordered chronologically. In my opinion, this structure is optimal to convey how the research I’ve carried at ETH followed a coherent storyline. It is always easier in hindsight to look back at previous results and find where things could be improved or simplified. For instance, Chapter 5 generalizes and to some extent simplifies a large part of Chapter 3. The proof of the main result in Chapter 1 would also have been simpler using the theory developed at the end of the thesis—at least simpler to read. But until recently, we didn’t necessarily have the tools to see it clearly. It’s one thing to derive boundary integral equations, be it in the language of exterior calculus, it’s another to develop a mature theory to better understand where they come from and how to work with them efficiently. So, in Part I, we solely work within the framework of classical vector analysis. Literature concerned with boundary integral equations in Euclidean space based on the later has a long history. It is rich, well-established and provided important results which helped us move forward. In particular, unbounded domains could be considered. While the presentation is technically heavy, our community is familiar with the operators involved. Hence, it may appeal to a wider audience. In Part II, we study traces for abstract Hilbert complexes and leverage the language of exterior calculus. The articles in the second part of this thesis can be regarded as the culmination of our recent research and (with Chapter 3) certainly the most original. In Appendix A, we introduce a boundary element Galerkin discretization for the first-kind boundary integral equations associated with Hodge–Dirac boundary value problems in three-dimensional Euclidean space. We briefly discuss stability and convergence before performing a simple numerical experiment to empirically confirm a theoretical result of Chapter 3.</p>
+<p>I believe that readers will agree that the few selected articles assembled in this thesis together make for a sound whole. It is divided in three parts. To each chapter corresponds a different article. The articles are ordered chronologically. In my opinion, this structure is optimal to convey how the research I've carried at ETH followed a coherent storyline. It is always easier in hindsight to look back at previous results and find where things could be improved or simplified. For instance, Chapter 5 generalizes and to some extent simplifies a large part of Chapter 3. The proof of the main result in Chapter 1 would also have been simpler using the theory developed at the end of the thesis—at least simpler to read. But until recently, we didn't necessarily have the tools to see it clearly. It's one thing to derive boundary integral equations, be it in the language of exterior calculus, it's another to develop a mature theory to better understand where they come from and how to work with them efficiently. So, in Part I, we solely work within the framework of classical vector analysis. Literature concerned with boundary integral equations in Euclidean space based on the later has a long history. It is rich, well-established and provided important results which helped us move forward. In particular, unbounded domains could be considered. While the presentation is technically heavy, our community is familiar with the operators involved. Hence, it may appeal to a wider audience. In Part II, we study traces for abstract Hilbert complexes and leverage the language of exterior calculus. The articles in the second part of this thesis can be regarded as the culmination of our recent research and (with Chapter 3) certainly the most original. In Appendix A, we introduce a boundary element Galerkin discretization for the first-kind boundary integral equations associated with Hodge–Dirac boundary value problems in three-dimensional Euclidean space. We briefly discuss stability and convergence before performing a simple numerical experiment to empirically confirm a theoretical result of Chapter 3.</p>
 
 <p>Needless to say, Chapter 5 is interesting in its own right and might find theoretical applications at the continuous level. Be that as it may, it is noteworthy that I had first proposed the title Boundary Element Exterior Calculus (BEEC), a title which also conveys well the philosophy behind our investigations. I believe that we can create a BEEC that would be to Finite Element Exterior Calculus (FEEC) what the boundary element method (BEM) is to the finite element method (FEM). This thesis shows that such a program is possible using Boundary Integral Exterior Calculus (BIEC) as foundation at the continuous level. In Appendix A, even though we do not exploit exterior calculus, the ease with which we use the Hilbert complex framework to cover stability and convergence demonstrates the potential usefulness of this perspective to study related boudary integral equations in general. There, we rely on a discrete Poincaré inequality previously established by Ralf Hiptmair and Xavier Claeys for piecewise linear tangential surface vector fields with continuous tangential components across interelement edges [6], but the proof can be generalized without difficulty to discrete differential forms. To develop bounded projections from the spaces of the trace de Rham complex to conforming finite element spaces that commute with the exterior derivative (or finding a systematic way to avoid the need of using them in establishing improved convergence estimates à la FEEC) is an interesting open problem that may lead to fruitful research in the future.</p>
 
@@ -24,15 +24,15 @@ This quotation from Paul Dirac is quite à-propos. When I started working with R
 <p>The contents of Chapter 1 were my first scientific contributions at ETH. Before writing this paper, I knew next to nothing about boundary integral equations. Therefore, the project served the dual purpose of contributing to ongoing research and at the same time learning about classical theory of boundary integral equations in Euclidean space before moving on to manifolds. Ralf Hiptmair suggested that we study transmission problems for Hodge–Helmholtz operators in late 2018. He had recently developed, together with Xavier Claeys, boundary integral equations for Hodge–Helmholtz boundary value problems posed in Lipschitz subdomains of three-dimensional Euclidean space [5]. My task was to couple the mixed variational formulation of the interior boundary value problem with the exterior scattering problem using the Dirichlet-to-Neumann map provided by the new boundary integral operators. The project proved very technical, partly due to the insufficient level of abstraction provided by the framework of vector analysis. We could already foresee the benefits of introducing exterior calculus to simplify the equations.</p>
 
 <h3>Chapter 2</h3>
-<p>It is well-known that the operators associated with common coupled domain-boundary variational formulations of acoustic and electromagnetic transmission problems are singular at certain frequencies. It was reasonable to expect that the issue would also arise for the coupled system of equations developed in Chapter 1. Since the matter belonged somewhat outside the scope of that chapter, our investigation of the topic eventually deserved its own paper. In Chapter 2, the main challenge is that working at an abstract level is needed to account for the peculiarities of the new operator: (1) a mixed formulation is used for the interior problem and (2) the boundary data lives in product spaces. By abstracting some of the main (functional analytic) features of first-kind boundary integral operators, the kernels of a class of operators associated with symmetrically coupled domain-boundary variational problems can be characterized explicitly in terms of the spectra of interior “Dirichlet” operators and “Neumann” traces of their eigenspaces. We conclude that the phenomenon is rooted in the formal structure of Calderon’s identities. The desired result concerning the operator from Chapter 1 is obtained as a special case. A couple of results from classical theory are generalized. The research conducted in Chapter 2 is another example where mathematics has guided me by the hand. The difficulties that arise from the complicated structure of the coupled domain-boundary system of equations for the Hodge–Helmholtz operator were fortuitous in two ways. First, along with analysing the issue successfully for the transmission problem studied in Chapter 1, we found an approachable proof that covers at once a few coupled systems of interest in acoustics and electromagnetism. Secondly, it is by following the blueprint detailed in Chapter 2 that the boundary integral equations of Chapter 3 and Chapter 5 are established. In a way, the projects behind Chapter 1 and Chapter 2 gave us the right tools to tackle what comes in the rest of the thesis.</p>
+<p>It is well-known that the operators associated with common coupled domain-boundary variational formulations of acoustic and electromagnetic transmission problems are singular at certain frequencies. It was reasonable to expect that the issue would also arise for the coupled system of equations developed in Chapter 1. Since the matter belonged somewhat outside the scope of that chapter, our investigation of the topic eventually deserved its own paper. In Chapter 2, the main challenge is that working at an abstract level is needed to account for the peculiarities of the new operator: (1) a mixed formulation is used for the interior problem and (2) the boundary data lives in product spaces. By abstracting some of the main (functional analytic) features of first-kind boundary integral operators, the kernels of a class of operators associated with symmetrically coupled domain-boundary variational problems can be characterized explicitly in terms of the spectra of interior "Dirichlet" operators and "Neumann" traces of their eigenspaces. We conclude that the phenomenon is rooted in the formal structure of Calderon's identities. The desired result concerning the operator from Chapter 1 is obtained as a special case. A couple of results from classical theory are generalized. The research conducted in Chapter 2 is another example where mathematics has guided me by the hand. The difficulties that arise from the complicated structure of the coupled domain-boundary system of equations for the Hodge–Helmholtz operator were fortuitous in two ways. First, along with analysing the issue successfully for the transmission problem studied in Chapter 1, we found an approachable proof that covers at once a few coupled systems of interest in acoustics and electromagnetism. Secondly, it is by following the blueprint detailed in Chapter 2 that the boundary integral equations of Chapter 3 and Chapter 5 are established. In a way, the projects behind Chapter 1 and Chapter 2 gave us the right tools to tackle what comes in the rest of the thesis.</p>
 
 <h3>Chapter 3</h3>
-<p>Scientifically speaking, the article in this chapter is very well in continuity with the work of Xavier Claeys and Ralf Hiptmair on the Hodge–Helmholtz operator [5], but it is a turning point mathematically. Up to that point, the study of the Hodge–Helmholtz operator by our research group had been largely motivated by boundary value problems in electromagnetism. The Hodge–Helmholtz operator arise when imposing the Lorenz gauge to the potential formulation of Maxwell’s equations in the frequency domain. In the limit as the frequency tends to zero, classical second-order electric and magnetic formulations break down [7,9], because the curl curl operator has an infinite dimensional kernel. Contrastingly, the low frequency limit of the Hodge–Helmholtz operator is the Hodge–Laplacian, which merely has a finite dimensional kernel whose dimension depends on the topology of the domain. The hope is then to find some clever regularization strategy for Hodge–Laplace boundary value problems that could lead to new ways of overcoming low frequency instabilities in electromagnetic simulation. This is a promising research direction, especially on “almost trivial” topologies where we face a one-dimensional kernel made of constants, such as on Lipschitz multi-screens which have relatively recently been a popular area of research [1, 3, 4]. Studying the Hodge–Dirac operator can be motivated in a similar way. The operator appears under a change of variables in the works of M. Taskinen, S. Vänskä and P. Ylä-Oijala [12–14] as Rainer Picard’s extended Maxwell operator. It was originally assembled by Rainer Picard by combining the first-order Maxwell operator with the principal part of the equations of linear acoustics [10,11]. Roughly speaking, Chapter 3 harnesses the same tips and tricks as in [5]. Thanks to the previous chapters, I had a deep understanding of the new theory on first-kind boundary integral equations for the Hodge–Helmholtz operator and I could repeat its key developments for the Hodge–Dirac operator. Initially, my work had the same intentions—it simply concerned a different model. In this context, what makes Chapter 3 special is a surprising mathematical discovery: first-kind boundary integral operators for the Hodge–Dirac operator were Hodge–Dirac operators in trace de Rham complexes where the trace spaces are equipped with non-local inner products defined through boundary potentials. We found ourselves at a crossroads. The Hodge–Dirac operator was not to be seen exclusively as a candidate for the stable simulation of electromagnetic phenomena anymore, but as a possible highway to a deeper understanding of the structure of first-kind boundary integral operators associated with what came to call “Hodge–X” operators in general (Hodge–Dirac, Hodge–Laplace, Hodge–Yukawa, Hodge–Helmholtz, etc.).</p>
+<p>Scientifically speaking, the article in this chapter is very well in continuity with the work of Xavier Claeys and Ralf Hiptmair on the Hodge–Helmholtz operator [5], but it is a turning point mathematically. Up to that point, the study of the Hodge–Helmholtz operator by our research group had been largely motivated by boundary value problems in electromagnetism. The Hodge–Helmholtz operator arise when imposing the Lorenz gauge to the potential formulation of Maxwell's equations in the frequency domain. In the limit as the frequency tends to zero, classical second-order electric and magnetic formulations break down [7,9], because the curl curl operator has an infinite dimensional kernel. Contrastingly, the low frequency limit of the Hodge–Helmholtz operator is the Hodge–Laplacian, which merely has a finite dimensional kernel whose dimension depends on the topology of the domain. The hope is then to find some clever regularization strategy for Hodge–Laplace boundary value problems that could lead to new ways of overcoming low frequency instabilities in electromagnetic simulation. This is a promising research direction, especially on "almost trivial" topologies where we face a one-dimensional kernel made of constants, such as on Lipschitz multi-screens which have relatively recently been a popular area of research [1, 3, 4]. Studying the Hodge–Dirac operator can be motivated in a similar way. The operator appears under a change of variables in the works of M. Taskinen, S. Vänskä and P. Ylä-Oijala [12–14] as Rainer Picard's extended Maxwell operator. It was originally assembled by Rainer Picard by combining the first-order Maxwell operator with the principal part of the equations of linear acoustics [10,11]. Roughly speaking, Chapter 3 harnesses the same tips and tricks as in [5]. Thanks to the previous chapters, I had a deep understanding of the new theory on first-kind boundary integral equations for the Hodge–Helmholtz operator and I could repeat its key developments for the Hodge–Dirac operator. Initially, my work had the same intentions—it simply concerned a different model. In this context, what makes Chapter 3 special is a surprising mathematical discovery: first-kind boundary integral operators for the Hodge–Dirac operator were Hodge–Dirac operators in trace de Rham complexes where the trace spaces are equipped with non-local inner products defined through boundary potentials. We found ourselves at a crossroads. The Hodge–Dirac operator was not to be seen exclusively as a candidate for the stable simulation of electromagnetic phenomena anymore, but as a possible highway to a deeper understanding of the structure of first-kind boundary integral operators associated with what came to call "Hodge–X" operators in general (Hodge–Dirac, Hodge–Laplace, Hodge–Yukawa, Hodge–Helmholtz, etc.).</p>
 
-<p>The intuition that such a connection could be unveiled between the “Dirichlet” and “Neumann” boundary value problems involving these operators and the associated boundary integral equations was in the air. In light of our discovery, it was now clear that one of the first-kind boundary integral operator associated with the Hodge–Laplacian in [5] was indeed an Hodge–Laplacian in mixedorder form in a trace de Rham complex. However, the other integral operator featured a curious term involving unit normal vector-fields at the boundary that was difficult to identify.</p>
+<p>The intuition that such a connection could be unveiled between the "Dirichlet" and "Neumann" boundary value problems involving these operators and the associated boundary integral equations was in the air. In light of our discovery, it was now clear that one of the first-kind boundary integral operator associated with the Hodge–Laplacian in [5] was indeed an Hodge–Laplacian in mixedorder form in a trace de Rham complex. However, the other integral operator featured a curious term involving unit normal vector-fields at the boundary that was difficult to identify.</p>
 
 <h3>Chapter 4</h3>
-<p>Our work with Dirk Pauly on traces for Hilbert complexes slightly breaks apart from the central theme of this thesis. The other chapters mainly concern the formulation and analysis of boundary integral equations. In Chapter 4, we focus on the trace complexes themselves. Before we would utilize the discovery made in Chapter 3, we wanted to better understand how surface operators spawn Fredholm Hilbert complexes. A mature literature is available concerning traces on the boundary of three-dimensional Lipschitz subdomains of Euclidean space. Notably, tangential traces are analyzed in the important work of A. Buffa, M. Costabel and D. Sheen [2], later generalized to differential forms by N. Weck [15]. D. Mitrea, M. Mitrea and M.-C. Shaw also published a comprehensive analysis of traces on Lipschitz subdomains of compact Riemannian manifolds in which properties of the trace de Rham complex are studied [8]. By adopting a new notion of trace operators for abstract Hilbert complexes, our contribution to the subject was to show that many of the properties established in [2], [8] and [15] for the trace de Rham complex are rooted in the general structure of Hilbert complexes. The trace spaces are introduced as annihilators/quotient spaces. The quotient space point of view is particularly relevant to boundary integral equations. By doing away with the concept of function space on the boundary, this alternative framework paves the way for the definition of traces on more complicated sets than Lipschitz boundaries. In that regard, it recently proved successful for the de Rham complex in [4], where boundary integral operators are defined on multi-screens. Beyond shedding new light on the origin of the duality between the classical traces, the main results of Chapter 4 are (1) that so-called stable “regular” decompositions are sufficient to generalize the classical trace theorems and (2) that if the lifting operators involved in those decompositions are compact, then the associated trace Hilbert complexes are Fredholm (they satisfy the compactness property). Evidently, since in the abstract setting there is no boundary, the analysis is detached from regularity considerations. Nevertheless, it is particularly interesting that the theory in Chapter 4 is built from the ground up using relatively elementary results of functional analysis, making it accessible to a very wide audience. In the future, more traces could be studied within this framework by applying the theory to other Hilbert complexes, such as to the elasticity complex.</p>
+<p>Our work with Dirk Pauly on traces for Hilbert complexes slightly breaks apart from the central theme of this thesis. The other chapters mainly concern the formulation and analysis of boundary integral equations. In Chapter 4, we focus on the trace complexes themselves. Before we would utilize the discovery made in Chapter 3, we wanted to better understand how surface operators spawn Fredholm Hilbert complexes. A mature literature is available concerning traces on the boundary of three-dimensional Lipschitz subdomains of Euclidean space. Notably, tangential traces are analyzed in the important work of A. Buffa, M. Costabel and D. Sheen [2], later generalized to differential forms by N. Weck [15]. D. Mitrea, M. Mitrea and M.-C. Shaw also published a comprehensive analysis of traces on Lipschitz subdomains of compact Riemannian manifolds in which properties of the trace de Rham complex are studied [8]. By adopting a new notion of trace operators for abstract Hilbert complexes, our contribution to the subject was to show that many of the properties established in [2], [8] and [15] for the trace de Rham complex are rooted in the general structure of Hilbert complexes. The trace spaces are introduced as annihilators/quotient spaces. The quotient space point of view is particularly relevant to boundary integral equations. By doing away with the concept of function space on the boundary, this alternative framework paves the way for the definition of traces on more complicated sets than Lipschitz boundaries. In that regard, it recently proved successful for the de Rham complex in [4], where boundary integral operators are defined on multi-screens. Beyond shedding new light on the origin of the duality between the classical traces, the main results of Chapter 4 are (1) that so-called stable "regular" decompositions are sufficient to generalize the classical trace theorems and (2) that if the lifting operators involved in those decompositions are compact, then the associated trace Hilbert complexes are Fredholm (they satisfy the compactness property). Evidently, since in the abstract setting there is no boundary, the analysis is detached from regularity considerations. Nevertheless, it is particularly interesting that the theory in Chapter 4 is built from the ground up using relatively elementary results of functional analysis, making it accessible to a very wide audience. In the future, more traces could be studied within this framework by applying the theory to other Hilbert complexes, such as to the elasticity complex.</p>
 
 <h3>Chapter 5</h3>
 <p>In this chapter, we generalize [5] and Chapter 3 to differential forms on compact manifolds without boundaries and in Euclidean space. First-kind boundary integral operators associated with Hodge–Dirac boundary value problems are shown to be Hodge–Dirac operators in trace de Rham complexes whose spaces are equipped with non-local inner products defined through boundary potentials. We also confirm our suspicion that the first kind boundary integral operators associated with Hodge–Laplace boundary value problems are Hodge-Laplace operators in mixedorder formulation in those same complexes. This discovery greatly simplifies their analysis, because we know from existing literature on abstract Hilbert complexes that the Hodge–Laplacian and the Hodge–Dirac operator are Fredholm operators of index zero. We found that the correspondence is structure-preserving to the extent that adding zero-order terms to the Hodge–Dirac and Hodge–Laplace operators lead to the addition of zero order terms in the trace de Rham complexes at the level of boundary integral operators. In Chapter 5, we study in particular Hodge–Yukawa operators and purely imaginary perturbations of the Hodge–Dirac operator.</p>
@@ -48,7 +48,7 @@ This quotation from Paul Dirac is quite à-propos. When I started working with R
           <h2>References</h2>
           <ol class="references">
             <li>A. Buffa and S. H. Christiansen, The electric field integral equation on Lipschitz screens: definitions and numerical approximation, Numer. Math., 94 (2003), pp. 229–267, https://doi.org/10.1007/s00211-002-0422-0.</li>
-            <li>A. Buffa, M. Costabel, and D. Sheen, On traces for H(curl, Ω) in Lipschitz domains, J. Math. Anal. Appl., 276 (2002), pp. 845–867, https://doi.org/10.1016/S0022-247X(02)00455-9.</li>
+            <li>A. Buffa, M. Costabel, and D. Sheen, On traces for H(curl, Ω) in Lipschitz domains, J. Math. Anal. Appl., 276 (2002), pp. 845–867, https://doi.org/10.1016/S0022-247X(02)00455-9.</li>
             <li>X. Claeys, L. Giacomel, R. Hiptmair, and C. Urzúa-Torres, Quotient-space boundary element methods for scattering at complex screens, BIT, 61 (2021), pp. 1193–1221, https://doi.org/10.1007/s10543-021-00859-y.</li>
             <li>X. Claeys and R. Hiptmair, Integral equations on multi-screens, Integral Equations Operator Theory, 77 (2013), pp. 167–197, https://doi.org/10.1007/s00020-013-2085-x.</li>
             <li>X. Claeys and R. Hiptmair, First-kind boundary integral equations for the Hodge-Helmholtz operator, SIAM J. Math. Anal., 51 (2019), pp. 197–227, https://doi.org/10.1137/17M1128101.</li>
@@ -58,8 +58,8 @@ This quotation from Paul Dirac is quite à-propos. When I started working with R
             <li>J. Ostrowski and R. Hiptmair, Frequency-stable full Maxwell in electro-quasistatic gauge, SIAM J. Sci. Comput., 43 (2021), pp. B1008–B1028, https://doi.org/10.1137/20M1356300.</li>
             <li>R. Picard, On the low frequency asymptotics in electromagnetic theory, J. Reine Angew. Math., 354 (1984), pp. 50–73, https://doi.org/10.1515/crll.1984.354.50.</li>
             <li>R. Picard, On a structural observation in generalized electromagnetic theory, J. Math. Anal. Appl., 110 (1985), pp. 247–264, https://doi.org/10.1016/0022-247X(85)90348-8.</li>
-            <li>M. Taskinen and S. Vänskä, Current and charge integral equation formulations and Picard’s extended Maxwell system, IEEE Trans. Antennas and Propagation, 55 (2007), pp. 3495–3503, https://doi.org/10.1109/TAP.2007.910363.</li>
-            <li>M. Taskinen and S. Vanska, Picard’s extended maxwell system and frequency stable surface integral equations, in 2007 Computational Electromagnetics Workshop, 2007, pp. 49–53, https://doi.org/10.1109/CEM.2007.4387650.</li>
+            <li>M. Taskinen and S. Vänskä, Current and charge integral equation formulations and Picard's extended Maxwell system, IEEE Trans. Antennas and Propagation, 55 (2007), pp. 3495–3503, https://doi.org/10.1109/TAP.2007.910363.</li>
+            <li>M. Taskinen and S. Vanska, Picard's extended maxwell system and frequency stable surface integral equations, in 2007 Computational Electromagnetics Workshop, 2007, pp. 49–53, https://doi.org/10.1109/CEM.2007.4387650.</li>
             <li>M. Taskinen and P. Ylä-Oijala, Current and charge integral equation formulation, IEEE Trans. Antennas and Propagation, 54 (2006), pp. 58–67, https://doi.org/10.1109/TAP.2005.861580.</li>
             <li>N. Weck, Traces of differential forms on Lipschitz boundaries, Analysis (Munich), 24 (2004), pp. 147–169, https://doi.org/10.1524/anly.2004.24.14.147.</li>
           </ol>
@@ -74,6 +74,10 @@ This quotation from Paul Dirac is quite à-propos. When I started working with R
     max-width: 980px; /* Aligns content with the site's header */
     margin: 0 auto;
     padding: 6rem 1.5rem;
+    /* Prevent horizontal overflow */
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
   }
   .card {
     background: var(--card-background);
@@ -81,21 +85,39 @@ This quotation from Paul Dirac is quite à-propos. When I started working with R
     border-radius: 20px;
     border: 1px solid var(--border);
     margin-bottom: 2rem;
+    /* Ensure cards don't overflow */
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  .card-text {
+    /* Prevent text content from overflowing */
+    width: 100%;
+    overflow-x: hidden;
   }
   .card h2 {
     font-size: 2.5rem;
     margin: 0 0 1rem 0;
     line-height: 1.2;
+    /* Ensure headings break properly */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   .card h3 {
     font-size: 1.8rem;
     margin: 2rem 0 1rem 0;
+    /* Ensure headings break properly */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   .card p {
     font-size: 1.2rem;
     line-height: 1.6;
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
+    /* Ensure paragraphs break properly */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   .quote {
     font-style: italic;
@@ -103,19 +125,40 @@ This quotation from Paul Dirac is quite à-propos. When I started working with R
     padding: 1rem 2rem;
     border-left: 4px solid #416b5c;
     background-color: #f8f9fa;
+    /* Prevent quote overflow */
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
   .quote p {
     margin: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   .quote footer {
     text-align: right;
     margin-top: 0.5rem;
     font-size: 1rem;
     color: #6c757d;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  .references {
+    /* Prevent references list from overflowing */
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
   .references li {
     margin-bottom: 1.5rem;
-    overflow-wrap: break-word; /* Fixes URL overflow bug */
+    /* Force long URLs to break */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all; /* More aggressive breaking for URLs */
+    hyphens: auto;
+    /* Prevent horizontal overflow */
+    width: 100%;
+    box-sizing: border-box;
   }
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
@@ -125,18 +168,69 @@ This quotation from Paul Dirac is quite à-propos. When I started working with R
     opacity: 0;
     transform: translateY(20px);
     animation: fadeIn 1.5s 0.2s ease-out forwards;
+    /* Prevent sections from overflowing */
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 
-  /* Adds consistent mobile responsiveness */
+  /* Enhanced mobile responsiveness */
   @media (max-width: 768px) {
     .content-wrapper {
-      padding: 4rem 1.5rem;
+      padding: 4rem 1rem; /* Reduced horizontal padding */
+      max-width: 100%; /* Full width on mobile */
     }
     .card {
-      padding: 2rem;
+      padding: 1.5rem; /* Reduced padding for mobile */
+      margin-bottom: 1.5rem;
+      border-radius: 15px; /* Slightly smaller border radius */
     }
     .card h2 {
-      font-size: 2rem;
+      font-size: 1.8rem; /* Smaller heading on mobile */
+    }
+    .card h3 {
+      font-size: 1.4rem; /* Smaller subheading on mobile */
+    }
+    .card p {
+      font-size: 1.1rem; /* Slightly smaller text on mobile */
+      line-height: 1.5;
+    }
+    .quote {
+      padding: 1rem 1.5rem; /* Reduced quote padding */
+      margin: 0 0 1.5rem 0;
+    }
+    .references li {
+      font-size: 1rem; /* Smaller reference text on mobile */
+      line-height: 1.4;
+      /* Even more aggressive URL breaking on mobile */
+      word-break: break-all;
+      overflow-wrap: anywhere;
+    }
+  }
+
+  /* Extra small screens */
+  @media (max-width: 480px) {
+    .content-wrapper {
+      padding: 3rem 0.75rem;
+    }
+    .card {
+      padding: 1.25rem;
+      border-radius: 12px;
+    }
+    .card h2 {
+      font-size: 1.6rem;
+    }
+    .card h3 {
+      font-size: 1.3rem;
+    }
+    .card p {
+      font-size: 1rem;
+    }
+    .quote {
+      padding: 0.75rem 1rem;
+    }
+    .references li {
+      font-size: 0.9rem;
     }
   }
 </style>
