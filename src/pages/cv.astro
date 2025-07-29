@@ -12,14 +12,14 @@ import Layout from '../layouts/Layout.astro';
     </div>
     
     <div class="main-column">
-      <section class="card">
+      <section class="card about-section">
         <h2>About</h2>
         <p>
           Computational science engineer with a PhD in mathematics interested in research, technical software development and new technologies, with experience in numerical methods, algorithms for simulation, scientific product development and engineering management
 </p>
       </section>
 
-      <section class="card">
+      <section class="card industry-experience">
         <h2>Industry Experience</h2>
         <div class="job">
           <h3>Plexim GmbH</h3>
@@ -92,7 +92,7 @@ built a Levenberg-Marquardt optimizer (least-squares) with geodesic acceleration
         </div>
       </section>
 
-      <section class="card">
+      <section class="card academic-experience">
         <h2>Academic Experience</h2>
         <div class="job">
           <h3>ETH Zurich</h3>
@@ -124,7 +124,7 @@ built a Levenberg-Marquardt optimizer (least-squares) with geodesic acceleration
         </div>
       </section>
 
-      <section class="card">
+      <section class="card teaching-experience">
   
       <h2>Teaching & Mentoring Experience</h2>
         <div class="job">
@@ -162,7 +162,7 @@ mentored and supervised teaching assistants; led weekly exercise sessions and pr
         </div>
       </section>
 
-      <section class="card">
+      <section class="card activities-leadership">
         <h2>Activities & Leadership</h2>
         <div class="job">
           <h3>NPDECODES Project</h3>
@@ -208,7 +208,7 @@ Of provincial scale, it is the largest event of the type in Quebec. It benefits 
         </div>
       </section>
 
-      <section class="card">
+      <section class="card publications-section">
         <h2>Publications</h2>
         <ul class="publications">
           <li>Schulz, E., Hiptmair, R., & Kurz, S. (2025).
@@ -237,7 +237,7 @@ Boundary element exterior calculus. <em>TBD</em>.</li>
 
     </div>
     <div class="sidebar-column">
-      <section class="card">
+      <section class="card contact-section">
         <h2>Contact</h2>
         <ul class="contact-list">
           <li><i class="fas fa-envelope"></i> erick.schulz@proton.me</li>
@@ -247,7 +247,7 @@ Boundary element exterior calculus. <em>TBD</em>.</li>
         </ul>
       </section>
 
-      <section class="card">
+      <section class="card skills-section">
         <h2>Skills</h2>
         <h3>Languages</h3>
         <p>French (Native), English (Native)</p>
@@ -269,7 +269,7 @@ Modern C++, STL, Eigen, Qt</li>
         </ul>
       </section>
 
-      <section class="card">
+      <section class="card awards-section">
         <h2>Awards</h2>
         <ul class="awards">
           <li><strong>Nominated for ETH Medal</strong> (2022)</li>
@@ -280,7 +280,7 @@ Modern C++, STL, Eigen, Qt</li>
         </ul>
       </section>
 
-      <section class="card">
+      <section class="card education-section">
         <h2>Education</h2>
         <div class="school">
           <h3>ETH Zurich, Switzerland</h3>
@@ -451,7 +451,23 @@ margin-bottom: 2rem;
   @media (max-width: 900px) {
     .content-wrapper {
       grid-template-columns: 1fr;
-}
+      /* Custom order for mobile - priority-based */
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* Mobile section ordering by priority */
+    .about-section { order: 1; }
+    .contact-section { order: 2; }
+    .industry-experience { order: 3; }
+    .academic-experience { order: 4; }
+    .education-section { order: 5; }
+    .teaching-experience { order: 6; }
+    .awards-section { order: 7; }
+    .activities-leadership { order: 8; }
+    .skills-section { order: 9; }
+    .publications-section { order: 10; }
+    
     .job-header {
       flex-direction: column;
       align-items: flex-start;
