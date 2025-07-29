@@ -2,323 +2,302 @@
 import Layout from '../layouts/Layout.astro';
 ---
 <Layout page="cv" bodyClass="home-gradient">
-  <div class="content-wrapper cv-fade-in">
-    <!-- PDF Download Button -->
-    <div class="download-button-container">
-      <a href="/cv.pdf" download="Erick_Schulz_CV.pdf" class="download-button">
-        <i class="fas fa-download"></i>
-        Download PDF
-      </a>
-    </div>
-    
-    <div class="main-column">
-      <section class="card about-section">
-        <h2>About</h2>
-        <p>
-          Computational science engineer with a PhD in mathematics interested in research, technical software development and new technologies, with experience in numerical methods, algorithms for simulation, scientific product development and engineering management
-</p>
-      </section>
-
-      <section class="card industry-experience">
-        <h2>Industry Experience</h2>
-        <div class="job">
-          <h3>Plexim GmbH</h3>
-          <p class="job-location">Zurich, Switzerland</p>
-          <div class="job-header">
-            <span class="job-position"><strong>Head of Scientific Software Development</strong></span>
-            <span class="job-date">2024 - ongoing</span>
-          </div>
-          <div class="job-header">
-            <span class="job-position"><strong>Team Lead Research Scientist</strong></span>
-            <span class="job-date">2023 - 2024</span>
-          </div>
-          <div class="job-header">
-            <span class="job-position"><strong>Scientific Software Developer</strong></span>
-            <span class="job-date">2022 - 2023</span>
-          </div>
-     
-     <ul>
-            <li>
-              <em>Core Technology:</em> R&D in high-performance differential algebraic equations (DAEs) solvers for the simulation of multi-physics, mixed-formulations, mixed-signals circuits and power electronics systems
-<p class="keywords"><em>Keywords:</em> Runge-Kutta, BDFs, interpolation, error estimation, modified Newton optimization, voltage limiting, KLU, QR, and SVD decompositions, sparse and dense linear algebra, multi-threading, automatic differentiation, ExprTk, Netlist parsing, graph algorithms</p>
-            </li>
-            <li><em>Product Development:</em> Building a state-of-the-art SPICE solver with innovative technology (multiyear roadmap);
-created a native fuzzy-search command-launcher/model-finder tool to improve UI/UX and discoverability of features in our flagship software PLECS;
-deployed a Python package (thermal-network) using JAX and Optax for surrogate thermal modeling of semiconductor devices (gradient-based fitting, model identification)</li>
-            <li><em>Real-Time Systems:</em> Developpement and stability analysis of new numerical schemes for real-time simulation on FPGAs (RT box)</li>
-            <li><em>Leadership:</em> Lead a team of 7 research scientists and engineers (PhDs and Masters);
-code reviews; supervised Bachelor and Master's theses in collaboration with ETH Zurich;
-travelled internationaly to give workshops to research institutes, engineering firms and manufacturers of semiconductors.</li>
-            <li><em>Tooling & Tech Stack:</em> C++ with Qt, embedded Lua, CMake, Gitlab, Git (version control), testing pipeline, Python, MATLAB, Octave (for initialization scripts), Modelica, circuit schematic editors</li>
-          </ul>
-        </div>
-        <div class="job">
-          <h3>Mitsubishi Electric Research Laboratories (MERL)</h3>
-          <p class="job-location">Cambridge, USA</p>
-          <div class="job-header">
-            <span class="job-position"><strong>Research Intern</strong></span>
-            <span class="job-date">May 2017 - Aug 2017</span>
-          </div>
-
-          <ul>
-            <li><em>Modeling & Optimization:</em> Simulation and optimization of large-scale HVAC systems with surrogate models;
-built a Levenberg-Marquardt optimizer (least-squares) with geodesic acceleration (using SUNDIALS for transients) to fit physically-based models to temperature data (MATLAB).</li>
-            <li><em>Tooling & Tech Stack:</em> MATLAB, Modelica, Mercurial (version control)</li>
-          </ul>
-        </div>
-        <div class="job">
-          <h3>Montreal University Hospital Center (CHUM)</h3>
-          <p class="job-location">Montreal, Canada</p>
-          <div class="job-header">
-            <span class="job-position"><strong>Research Assistant, Department of Neurosurgery</strong></span>
-            <span class="job-date">May 2012 - Aug 2012</span>
-          </div>
-
-          <ul>
-            <li>Conducted literature review on motor learning (brain processes involved in imitation games)</li>
-          </ul>
-        </div>
-        <div class="job">
-          <h3>MEER</h3>
-          <p class="job-location">Montreal, Canada</p>
-          <div class="job-header">
-            <span class="job-position"><strong>Laboratory Thechnician, Research Institute on Electricity of Quebec (IREQ)</strong></span>
-            <span class="job-date">part-time, 2010-2011</span>
-          </div>
-
-          <ul>
-            <li>Processed and graded ruthenium powder by particle size through multi-stage sieving</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="card academic-experience">
-        <h2>Academic Experience</h2>
-        <div class="job">
-          <h3>ETH Zurich</h3>
-          <p class="job-location">Zurich, Switzerland</p>
-          <div class="job-header">
-            <span class="job-position"><strong>Scientific Assistant, Seminar for Applied Mathematics (SAM)</strong></span>
-            <span class="job-date">2018 - 2022</span>
-          </div>
-
-          <ul>
-            <li>
-              Research at the interface of numerical analysis and differential geometry (PDEs on manifolds), leading to multiple publications in top-tier journals and presentations at international conferences
-<p class="keywords"><em>Keywords:</em> manifolds, electromagnetism, scattering, domain decompositions, boundary and finite element methods (FEM & BEM), exterior calculus, clifford algebras, resonant frequencies, Hilbert complexes, conservative methods</p>
-            </li>
-          </ul>
-        </div>
-        <div class="job">
-          <h3>McGill University</h3>
-          <p class="job-location">Montreal, Canada</p>
-          <div class="job-header">
-            <span class="job-position"><strong>Research Assistant, Department of Mathematics and Statistics</strong></span>
-            <span class="job-date">2014 - 2016</span>
-          </div>
-
-          <ul>
-            <li><em>Scientific Computing:</em> Developed a Lattice Gauge Theory solver in C for the Yang-Mills equation, implement gradient descent and line search on Principal Fiber bundles</li>
-            <li><em>Algorithm Implementation:</em> Implemented an algorithm in C to study Copulas and measures of statistical correlation</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="card teaching-experience">
-  
-      <h2>Teaching & Mentoring Experience</h2>
-        <div class="job">
-          <h3>ETH Zurich</h3>
-          <p class="job-location">Zurich, Switzerland</p>
-          <div class="job-header">
-            <span class="job-position"><strong>Lecturer</strong></span>
-            <span class="job-date">part-time, upcoming 2026</span>
-          </div>
-
-          <ul>
-            <li>Invited to take over as lecturer for <em>Numerical Methods for Partial Differential Equations</em>, a mandatory advanced course of the Computational Science and Engineering (CSE) program.</li>
-          </ul>
-          <div class="job-header">
-            <span class="job-position"><strong>Organizer & T.A.</strong></span>
-            <span class="job-date">2018 - 2022</span>
-          </div>
-          <ul>
-            <li>Contributed in developing the curriculum, exercises and exams for <em>Numerical Methods for PDEs</em>;
-mentored and supervised teaching assistants; led weekly exercise sessions and prepared examinations for large classes</li>
-            <li>Weekly exercise sessions: <em>Numerical Methods for Application in Engineering II</em></li>
-          </ul>
-        </div>
-        <div class="job">
-          <h3>F.A.C.E.</h3>
-          <p class="job-location">Montreal, Canada</p>
-          <div class="job-header">
-            <span class="job-position"><strong>Teacher</strong></span>
-            <span class="job-date">part-time, 2013 - 2015</span>
-          </div>
-
-          <ul>
-            <li>Led biweekly exercise sessions for elementary and high school students, focusing on mathematics and science</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="card activities-leadership">
-        <h2>Activities & Leadership</h2>
-        <div class="job">
-          <h3>NPDECODES Project</h3>
-          <div class="job-header">
-            <span class="job-position"><strong>Project Co-Lead</strong></span>
-            <span class="job-date">2018 - 2022</span>
-          </div>
-
-          <ul>
-            <li>
-              Led a team of student developers in creating <strong>NPDECODES</strong>, a C++ repository of ~65 physical simulation and optimization algorithms, now the standard framework for the course
-<p class="keywords"><em>Keywords:</em> wave propagation, convection-diffusion, conservation laws, electrostatics, force calculations, error estimators, convergence analysis, polynomial fitting, method of lines and much more;
-C++, Python</p>
-            </li>
-          </ul>
-        </div>
-        <div class="job">
-          <h3>Seminars in Undergraduate Mathematics in Montreal (SUMM)</h3>
-          <div class="job-header">
-            <span class="job-position"><strong>VP Finance</strong></span>
-            <span class="job-date">2015 - 2016</span>
-          </div>
-          <div class="job-header">
-            <span class="job-position"><strong>Oranizing Committee Member</strong></span>
-            <span class="job-date">2014 - 2015</span>
-          </div>
-
-          <ul>
-            <li>SUMM is an annual conference organized in collaboration by students of all four universities in Montreal, QC, Canada.
-Of provincial scale, it is the largest event of the type in Quebec. It benefits to undergraduate students from universities of both Quebec and Ontario.</li>
-          </ul>
-        </div>
-        <div class="job">
-          <h3>McGill CodeJam - Artificial Intelligence</h3>
-          <div class="job-header">
-            <span class="job-position"><strong>Hackathon (48h)</strong></span>
-            <span class="job-date">2014</span>
-          </div>
-
-          <ul>
-            <li>Design and implementation of a facial recognition algorithm based on PCA</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="card publications-section">
-        <h2>Publications</h2>
-        <ul class="publications">
-          <li>Schulz, E., Hiptmair, R., & Kurz, S. (2025).
-Boundary integral exterior calculus. <em>Journal of the European Mathematical Society</em>.</li>
-          <li>Schulz, E., & Wan, A. T. S. (2025).
-Minimal $ \ell^2 $ norm discrete multiplier method. <em>Journal of Computational Dynamics, 12</em>(2), 212-238.</li>
-          <li>Hiptmair, R., Pauly, D., & Schulz, E. (2023).
-Traces for Hilbert complexes. <em>Journal of Functional Analysis, 284</em>(10).</li>
-          <li>Schulz, E., & Hiptmair, R. (2022).
-First-kind boundary integral equations for the Dirac operator in 3-dimensional Lipschitz domains.
-<em>SIAM Journal on Mathematical Analysis, 54</em>(1), 616-648.</li>
-          <li>Schulz, E., & Hiptmair, R. (2022).
-Spurious resonances in coupled domain-boundary variational formulations... <em>Computational Methods in Applied Mathematics, 22</em>(4), 971-985.</li>
-          <li>Schulz, E., & Hiptmair, R. (2022).
-Coupled domain-boundary variational formulations for Hodge--Helmholtz operators. <em>Integral Equations and Operator Theory, 94</em>(1).</li>
-          <li>Kirchhart, M., & Schulz, E. (2022).
-Div--curl problems and H1-regular stream functions in 3D Lipschitz domains.
-<em>Mathematical Methods in the Applied Sciences, 45</em>(3), 1097-1117.</li>
-          <li>Schulz, E., & Tsogtgerel, G. (2020).
-Convergence of discrete exterior calculus approximations for Poisson problems. <em>Discrete & Computational Geometry, 63</em>, 346-376.</li>
-          <li>Hiptmair, R., & Schulz, E. (in progress).
-Boundary element exterior calculus. <em>TBD</em>.</li>
-        </ul>
-        <p><em>Multiple intenational conference presentations in Canada, Germany, Switzerland and UK.</em></p>
-      </section>
-
-    </div>
-    <div class="sidebar-column">
-      <section class="card contact-section">
-        <h2>Contact</h2>
-        <ul class="contact-list">
-          <li><i class="fas fa-envelope"></i> erick.schulz@proton.me</li>
-   
-       <li><i class="fas fa-map-marker-alt"></i> Zurich, CH</li>
-          <li><i class="fas fa-globe"></i> erickschulz.pages.dev/</li>
-        </ul>
-      </section>
-
-      <section class="card skills-section">
-        <h2>Skills</h2>
-        <h3>Languages</h3>
-        <p>French (Native), English (Native)</p>
-        <h3>Programming</h3>
-        <ul class="skills-list">
-          <li><strong>C++:</strong> 
-Modern C++, STL, Eigen, Qt</li>
-          <li><strong>Python:</strong> NumPy, SciPy, Matplotlib, Pandas</li>
-          <li><strong>Other:</strong> MATLAB, Modelica, LaTeX, Git, Gitlab, CMake</li>
-        </ul>
-        <h3>Core Competencies</h3>
-        <ul class="skills-list">
-          <li>Numerical Methods for ODEs, DAEs & PDEs (FEM, BEM, FVM)</li>
-          <li>Applied Mathematics</li>
-          
-<li>Scientific Computing</li>
-          <li>Research & Product Development</li>
-          <li>Leadership & Project Management</li>
-        </ul>
-      </section>
-
-      <section class="card awards-section">
-        <h2>Awards</h2>
-        <ul class="awards">
-          <li><strong>Nominated for ETH Medal</strong> (2022)</li>
-          <li><strong>Graduate Excellence Fellowship Award</strong> (2017)</li>
-       
-   <li><strong>Undergraduate Student Research Award (NSERC)</strong> (2015)</li>
-          <li><strong>Collegiate Literature Award</strong> (2011)</li>
-        </ul>
-      </section>
-
-      <section class="card education-section">
-        <h2>Education</h2>
-        <div class="school">
-          <h3>ETH Zurich, Switzerland</h3>
-          <p><strong>Doctorate (PhD) -- Applied Mathematics</strong> (2018 - 2022)</p>
-          <ul>
-  
-          <li><strong>Director:</strong> Prof. Ralf Hiptmair</li>
-            <li><strong>Thesis:</strong> Developed a novel thory of boundary integral equations for the (possibly pertubed) Hodge-Dirac and Hodge-Laplace operators, advancing our understanding of low frequency models in electromagnetism and the structure of first-kind integral equations on manifolds.</li>
-          </ul>
-        </div>
-        <div class="school">
-          <h3>Polish Academy of Science, Poland</h3>
-          <p><strong>Advance Course -- Finite Element Method</strong> (July 2019)</p>
-
-           <ul>
-            <li>Advanced course on the Finite Element Method (FEM) from the European Community on Computational Methods in Applied Sciences (ECCOMAS) organized by the Polish Association for Computational Mechanics.</li>
-          </ul>
-        </div>
-        <div class="school">
-       
-   <h3>McGill University, Canada</h3>
-          <p><strong>Master's (M.Sc.) -- Applied Mathematics</strong> (2016 - 2018)</p>
-           <ul>
-            <li><strong>Director:</strong> Prof. Tsogtgerel Gantumur</li>
-            <li><strong>Thesis:</strong> Published the first proof of convergence of Discrete Exterior Calculus (DEC) for the N-dimensional Poisson problem (a method used in digital geometry processing and computer graphics).</li>
-          </ul>
-    
-      <p><strong>Bachelor (B.A.) -- Honours Mathematics & Computer Science</strong> (2012 - 2016)</p>
-          <ul>
-            <li>Graduated with First Class Honours</li>
-            <li>Dean's Honour List (Top 10% of Faculty)</li>
-            <li><strong>Highlights:</strong> numrical methods, differential geometry, analysis & algebra, ODEs & PDEs, algorithms & data structures.</li>
-          </ul>
-    
-    </div>
-      </section>
-    </div>
+<div class="content-wrapper cv-fade-in">
+  <div class="download-button-container">
+    <a href="/cv.pdf" download="Erick_Schulz_CV.pdf" class="download-button">
+      <i class="fas fa-download"></i>
+      Download PDF
+    </a>
   </div>
+  
+  <div class="main-column">
+    <section class="card about-section">
+      <h2>About</h2>
+      <p>
+        Computational science engineer with a PhD in mathematics interested in research, technical software development and new technologies, with experience in numerical methods, algorithms for simulation, scientific product development and engineering management
+      </p>
+    </section>
+
+    <section class="card industry-experience">
+      <h2>Industry Experience</h2>
+      <div class="job">
+        <h3>Plexim GmbH</h3>
+        <p class="job-location">Zurich, Switzerland</p>
+        <div class="job-header">
+          <span class="job-position"><strong>Head of Scientific Software Development</strong></span>
+          <span class="job-date">2024 - ongoing</span>
+        </div>
+        <div class="job-header">
+          <span class="job-position"><strong>Team Lead Research Scientist</strong></span>
+          <span class="job-date">2023 - 2024</span>
+        </div>
+        <div class="job-header">
+          <span class="job-position"><strong>Scientific Software Developer</strong></span>
+          <span class="job-date">2022 - 2023</span>
+        </div>
+      
+        <ul>
+          <li>
+            <em>Core Technology:</em> R&D in high-performance differential algebraic equations (DAEs) solvers for the simulation of multi-physics, mixed-formulations, mixed-signals circuits and power electronics systems
+            <p class="keywords"><em>Keywords:</em> Runge-Kutta, BDFs, interpolation, error estimation, modified Newton optimization, voltage limiting, KLU, QR, and SVD decompositions, sparse and dense linear algebra, multi-threading, automatic differentiation, ExprTk, Netlist parsing, graph algorithms</p>
+          </li>
+          <li><em>Product Development:</em> Building a state-of-the-art SPICE solver with innovative technology (multiyear roadmap); created a native fuzzy-search command-launcher/model-finder tool to improve UI/UX and discoverability of features in our flagship software PLECS; deployed a Python package (thermal-network) using JAX and Optax for surrogate thermal modeling of semiconductor devices (gradient-based fitting, model identification)</li>
+          <li><em>Real-Time Systems:</em> Developpement and stability analysis of new numerical schemes for real-time simulation on FPGAs (RT box)</li>
+          <li><em>Leadership:</em> Lead a team of 7 research scientists and engineers (PhDs and Masters); code reviews; supervised Bachelor and Master's theses in collaboration with ETH Zurich; travelled internationaly to give workshops to research institutes, engineering firms and manufacturers of semiconductors.</li>
+          <li><em>Tooling & Tech Stack:</em> C++ with Qt, embedded Lua, CMake, Gitlab, Git (version control), testing pipeline, Python, MATLAB, Octave (for initialization scripts), Modelica, circuit schematic editors</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Mitsubishi Electric Research Laboratories (MERL)</h3>
+        <p class="job-location">Cambridge, USA</p>
+        <div class="job-header">
+          <span class="job-position"><strong>Research Intern</strong></span>
+          <span class="job-date">May 2017 - Aug 2017</span>
+        </div>
+
+        <ul>
+          <li><em>Modeling & Optimization:</em> Simulation and optimization of large-scale HVAC systems with surrogate models; built a Levenberg-Marquardt optimizer (least-squares) with geodesic acceleration (using SUNDIALS for transients) to fit physically-based models to temperature data (MATLAB).</li>
+          <li><em>Tooling & Tech Stack:</em> MATLAB, Modelica, Mercurial (version control)</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Montreal University Hospital Center (CHUM)</h3>
+        <p class="job-location">Montreal, Canada</p>
+        <div class="job-header">
+          <span class="job-position"><strong>Research Assistant, Department of Neurosurgery</strong></span>
+          <span class="job-date">May 2012 - Aug 2012</span>
+        </div>
+
+        <ul>
+          <li>Conducted literature review on motor learning (brain processes involved in imitation games)</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>MEER</h3>
+        <p class="job-location">Montreal, Canada</p>
+        <div class="job-header">
+          <span class="job-position"><strong>Laboratory Thechnician, Research Institute on Electricity of Quebec (IREQ)</strong></span>
+          <span class="job-date">part-time, 2010-2011</span>
+        </div>
+
+        <ul>
+          <li>Processed and graded ruthenium powder by particle size through multi-stage sieving</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card academic-experience">
+      <h2>Academic Experience</h2>
+      <div class="job">
+        <h3>ETH Zurich</h3>
+        <p class="job-location">Zurich, Switzerland</p>
+        <div class="job-header">
+          <span class="job-position"><strong>Scientific Assistant, Seminar for Applied Mathematics (SAM)</strong></span>
+          <span class="job-date">2018 - 2022</span>
+        </div>
+
+        <ul>
+          <li>
+            Research at the interface of numerical analysis and differential geometry (PDEs on manifolds), leading to multiple publications in top-tier journals and presentations at international conferences
+            <p class="keywords"><em>Keywords:</em> manifolds, electromagnetism, scattering, domain decompositions, boundary and finite element methods (FEM & BEM), exterior calculus, clifford algebras, resonant frequencies, Hilbert complexes, conservative methods</p>
+          </li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>McGill University</h3>
+        <p class="job-location">Montreal, Canada</p>
+        <div class="job-header">
+          <span class="job-position"><strong>Research Assistant, Department of Mathematics and Statistics</strong></span>
+          <span class="job-date">2014 - 2016</span>
+        </div>
+
+        <ul>
+          <li><em>Scientific Computing:</em> Developed a Lattice Gauge Theory solver in C for the Yang-Mills equation, implement gradient descent and line search on Principal Fiber bundles</li>
+          <li><em>Algorithm Implementation:</em> Implemented an algorithm in C to study Copulas and measures of statistical correlation</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card teaching-experience">
+    
+    <h2>Teaching & Mentoring Experience</h2>
+      <div class="job">
+        <h3>ETH Zurich</h3>
+        <p class="job-location">Zurich, Switzerland</p>
+        <div class="job-header">
+          <span class="job-position"><strong>Lecturer</strong></span>
+          <span class="job-date">part-time, upcoming 2026</span>
+        </div>
+
+        <ul>
+          <li>Invited to take over as lecturer for <em>Numerical Methods for Partial Differential Equations</em>, a mandatory advanced course of the Computational Science and Engineering (CSE) program.</li>
+        </ul>
+        <div class="job-header">
+          <span class="job-position"><strong>Organizer & T.A.</strong></span>
+          <span class="job-date">2018 - 2022</span>
+        </div>
+        <ul>
+          <li>Contributed in developing the curriculum, exercises and exams for <em>Numerical Methods for PDEs</em>; mentored and supervised teaching assistants; led weekly exercise sessions and prepared examinations for large classes</li>
+          <li>Weekly exercise sessions: <em>Numerical Methods for Application in Engineering II</em></li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>F.A.C.E.</h3>
+        <p class="job-location">Montreal, Canada</p>
+        <div class="job-header">
+          <span class="job-position"><strong>Teacher</strong></span>
+          <span class="job-date">part-time, 2013 - 2015</span>
+        </div>
+
+        <ul>
+          <li>Led biweekly exercise sessions for elementary and high school students, focusing on mathematics and science</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card activities-leadership">
+      <h2>Activities & Leadership</h2>
+      <div class="job">
+        <h3>NPDECODES Project</h3>
+        <div class="job-header">
+          <span class="job-position"><strong>Project Co-Lead</strong></span>
+          <span class="job-date">2018 - 2022</span>
+        </div>
+
+        <ul>
+          <li>
+            Led a team of student developers in creating <strong>NPDECODES</strong>, a C++ repository of ~65 physical simulation and optimization algorithms, now the standard framework for the course
+            <p class="keywords"><em>Keywords:</em> wave propagation, convection-diffusion, conservation laws, electrostatics, force calculations, error estimators, convergence analysis, polynomial fitting, method of lines and much more; C++, Python</p>
+          </li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Seminars in Undergraduate Mathematics in Montreal (SUMM)</h3>
+        <div class="job-header">
+          <span class="job-position"><strong>VP Finance</strong></span>
+          <span class="job-date">2015 - 2016</span>
+        </div>
+        <div class="job-header">
+          <span class="job-position"><strong>Oranizing Committee Member</strong></span>
+          <span class="job-date">2014 - 2015</span>
+        </div>
+
+        <ul>
+          <li>SUMM is an annual conference organized in collaboration by students of all four universities in Montreal, QC, Canada. Of provincial scale, it is the largest event of the type in Quebec. It benefits to undergraduate students from universities of both Quebec and Ontario.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>McGill CodeJam - Artificial Intelligence</h3>
+        <div class="job-header">
+          <span class="job-position"><strong>Hackathon (48h)</strong></span>
+          <span class="job-date">2014</span>
+        </div>
+
+        <ul>
+          <li>Design and implementation of a facial recognition algorithm based on PCA</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card publications-section">
+      <h2>Publications</h2>
+      <ul class="publications">
+        <li>Schulz, E., Hiptmair, R., & Kurz, S. (2025). Boundary integral exterior calculus. <em>Journal of the European Mathematical Society</em>.</li>
+        <li>Schulz, E., & Wan, A. T. S. (2025). Minimal $ \ell^2 $ norm discrete multiplier method. <em>Journal of Computational Dynamics, 12</em>(2), 212-238.</li>
+        <li>Hiptmair, R., Pauly, D., & Schulz, E. (2023). Traces for Hilbert complexes. <em>Journal of Functional Analysis, 284</em>(10).</li>
+        <li>Schulz, E., & Hiptmair, R. (2022). First-kind boundary integral equations for the Dirac operator in 3-dimensional Lipschitz domains. <em>SIAM Journal on Mathematical Analysis, 54</em>(1), 616-648.</li>
+        <li>Schulz, E., & Hiptmair, R. (2022). Spurious resonances in coupled domain-boundary variational formulations... <em>Computational Methods in Applied Mathematics, 22</em>(4), 971-985.</li>
+        <li>Schulz, E., & Hiptmair, R. (2022). Coupled domain-boundary variational formulations for Hodge--Helmholtz operators. <em>Integral Equations and Operator Theory, 94</em>(1).</li>
+        <li>Kirchhart, M., & Schulz, E. (2022). Div--curl problems and H1-regular stream functions in 3D Lipschitz domains. <em>Mathematical Methods in the Applied Sciences, 45</em>(3), 1097-1117.</li>
+        <li>Schulz, E., & Tsogtgerel, G. (2020). Convergence of discrete exterior calculus approximations for Poisson problems. <em>Discrete & Computational Geometry, 63</em>, 346-376.</li>
+        <li>Hiptmair, R., & Schulz, E. (in progress). Boundary element exterior calculus. <em>TBD</em>.</li>
+      </ul>
+      <p><em>Multiple intenational conference presentations in Canada, Germany, Switzerland and UK.</em></p>
+    </section>
+
+  </div>
+  <div class="sidebar-column">
+    <section class="card contact-section">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li><i class="fas fa-envelope"></i> erick.schulz@proton.me</li>
+      
+        <li><i class="fas fa-map-marker-alt"></i> Zurich, CH</li>
+        <li><i class="fas fa-globe"></i> erickschulz.pages.dev/</li>
+      </ul>
+    </section>
+
+    <section class="card skills-section">
+      <h2>Skills</h2>
+      <h3>Languages</h3>
+      <p>French (Native), English (Native)</p>
+      <h3>Programming</h3>
+      <ul class="skills-list">
+        <li><strong>C++:</strong> Modern C++, STL, Eigen, Qt</li>
+        <li><strong>Python:</strong> NumPy, SciPy, Matplotlib, Pandas</li>
+        <li><strong>Other:</strong> MATLAB, Modelica, LaTeX, Git, Gitlab, CMake</li>
+      </ul>
+      <h3>Core Competencies</h3>
+      <ul class="skills-list">
+        <li>Numerical Methods for ODEs, DAEs & PDEs (FEM, BEM, FVM)</li>
+        <li>Applied Mathematics</li>
+        
+        <li>Scientific Computing</li>
+        <li>Research & Product Development</li>
+        <li>Leadership & Project Management</li>
+      </ul>
+    </section>
+
+    <section class="card awards-section">
+      <h2>Awards</h2>
+      <ul class="awards">
+        <li><strong>Nominated for ETH Medal</strong> (2022)</li>
+        <li><strong>Graduate Excellence Fellowship Award</strong> (2017)</li>
+      
+        <li><strong>Undergraduate Student Research Award (NSERC)</strong> (2015)</li>
+        <li><strong>Collegiate Literature Award</strong> (2011)</li>
+      </ul>
+    </section>
+
+    <section class="card education-section">
+      <h2>Education</h2>
+      <div class="school">
+        <h3>ETH Zurich, Switzerland</h3>
+        <p><strong>Doctorate (PhD) -- Applied Mathematics</strong> (2018 - 2022)</p>
+        <ul>
+        
+          <li><strong>Director:</strong> Prof. Ralf Hiptmair</li>
+          <li><strong>Thesis:</strong> Developed a novel thory of boundary integral equations for the (possibly pertubed) Hodge-Dirac and Hodge-Laplace operators, advancing our understanding of low frequency models in electromagnetism and the structure of first-kind integral equations on manifolds.</li>
+        </ul>
+      </div>
+      <div class="school">
+        <h3>Polish Academy of Science, Poland</h3>
+        <p><strong>Advance Course -- Finite Element Method</strong> (July 2019)</p>
+
+        <ul>
+          <li>Advanced course on the Finite Element Method (FEM) from the European Community on Computational Methods in Applied Sciences (ECCOMAS) organized by the Polish Association for Computational Mechanics.</li>
+        </ul>
+      </div>
+      <div class="school">
+      
+        <h3>McGill University, Canada</h3>
+        <p><strong>Master's (M.Sc.) -- Applied Mathematics</strong> (2016 - 2018)</p>
+        <ul>
+          <li><strong>Director:</strong> Prof. Tsogtgerel Gantumur</li>
+          <li><strong>Thesis:</strong> Published the first proof of convergence of Discrete Exterior Calculus (DEC) for the N-dimensional Poisson problem (a method used in digital geometry processing and computer graphics).</li>
+        </ul>
+      
+        <p><strong>Bachelor (B.A.) -- Honours Mathematics & Computer Science</strong> (2012 - 2016)</p>
+        <ul>
+          <li>Graduated with First Class Honours</li>
+          <li>Dean's Honour List (Top 10% of Faculty)</li>
+          <li><strong>Highlights:</strong> numrical methods, differential geometry, analysis & algebra, ODEs & PDEs, algorithms & data structures.</li>
+        </ul>
+      
+      </div>
+    </section>
+  </div>
+</div>
 </Layout>
 
 <style>
@@ -369,24 +348,27 @@ Modern C++, STL, Eigen, Qt</li>
     padding: 2.5rem;
     border-radius: 20px;
     border: 1px solid var(--border);
-}
+  }
   .card h2 {
     font-size: 1.75rem;
     font-weight: 600;
     border-bottom: 1px solid var(--border);
     padding-bottom: 1rem;
     margin-top: 0;
-margin-bottom: 2rem;
+    margin-bottom: 2rem;
   }
   .card h3 {
     font-size: 1.2rem;
     font-weight: 600;
     margin-top: 1.5rem;
     margin-bottom: 0.25rem;
-}
-  .job, .school { margin-bottom: 2.5rem; }
-  .job:last-child, .school:last-child { margin-bottom: 0;
-}
+  }
+  .job, .school {
+    margin-bottom: 2.5rem;
+  }
+  .job:last-child, .school:last-child {
+    margin-bottom: 0;
+  }
   .job-header {
     display: flex;
     justify-content: space-between;
@@ -411,27 +393,28 @@ margin-bottom: 2rem;
     padding-left: 1.25rem;
     color: var(--text-secondary);
   }
-  li { margin-bottom: 0.75rem;
-}
+  li {
+    margin-bottom: 0.75rem;
+  }
   .skills-list, .awards, .publications, .contact-list {
     list-style-type: none;
     padding-left: 0;
-}
+  }
   .skills-list li, .awards li, .publications li {
     margin-bottom: 0.75rem;
-}
+  }
   .contact-list li {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
     color: var(--text-secondary);
-}
+  }
   .contact-list li i {
     margin-right: 0.75rem;
     width: 20px;
     text-align: center;
     color: var(--text-primary);
-}
+  }
   .keywords {
     font-size: 0.9rem;
     color: var(--text-secondary);
@@ -444,19 +427,29 @@ margin-bottom: 2rem;
   }
 
   @keyframes cvPageFadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   @media (max-width: 900px) {
     .content-wrapper {
-      grid-template-columns: 1fr;
-      /* Custom order for mobile - priority-based */
       display: flex;
       flex-direction: column;
     }
+
+    /* This is the fix: It "un-boxes" the sections, making them direct children of the flex container */
+    .main-column,
+    .sidebar-column {
+      display: contents;
+    }
     
-    /* Mobile section ordering by priority */
+    /* Mobile section ordering by priority (this will now work as intended) */
     .about-section { order: 1; }
     .contact-section { order: 2; }
     .industry-experience { order: 3; }
@@ -487,24 +480,23 @@ margin-bottom: 2rem;
     --text-secondary: #6c757d;
     --border: #dee2e6;
     --card-background: #ffffff;
-}
+  }
   body.dark {
     --background: #121212;
     --text-primary: #e0e0e0;
     --text-secondary: #b0b0b0;
     --border: #333333;
     --card-background: #1e1e1e;
-}
+  }
   body {
     background-color: var(--background);
     color: var(--text-primary);
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
-}
+  }
   .home-gradient {
     background: linear-gradient(135deg, #f5f7fa 0%, #d1e0db 100%);
     background-attachment: fixed;
-
   }
   body.dark .home-gradient {
     background: linear-gradient(135deg, #1d2635 0%, #1f4247 100%);
