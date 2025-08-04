@@ -39,7 +39,7 @@ import Layout from '../layouts/Layout.astro';
         <ul>
           <li>
             <em>Core Technology:</em> R&D in high-performance differential algebraic equations (DAEs) solvers for the simulation of multi-physics, mixed-formulations, mixed-signals circuits and power electronics systems
-            <p class="keywords"><em>Keywords:</em> Runge-Kutta, BDFs, interpolation, error estimation, modified Newton optimization, voltage limiting, KLU, QR, and SVD decompositions, sparse and dense linear algebra, multi-threading, automatic differentiation, ExprTk, Netlist parsing, graph algorithms</p>
+                            <p class="keywords"><em>Keywords:</em>  sparse & dense linear algebra, KLU, QR and SVD decompositions, multi-threading, automatic differentiation, ExprTk, Netlist parsing, graph algorithms, Runge-Kutta, BDFs, interpolation, error estimation, nonlinear optimization, voltage limiting</p>
           </li>
           <li><em>Product Development:</em> Building a state-of-the-art SPICE solver with innovative technology (multiyear roadmap); created a native fuzzy-search command-launcher/model-finder tool to improve UI/UX and discoverability of features in our flagship software PLECS; deployed a Python package (thermal-network) using JAX and Optax for surrogate thermal modeling of semiconductor devices (gradient-based fitting, model identification)</li>
           <li><em>Real-Time Systems:</em> Developpement and stability analysis of new numerical schemes for real-time simulation on FPGAs (RT box)</li>
@@ -233,9 +233,15 @@ import Layout from '../layouts/Layout.astro';
       <p>French (Native), English (Native)</p>
       <h3>Programming</h3>
       <ul class="skills-list">
-        <li><strong>C++:</strong> Modern C++, STL, Eigen, Qt</li>
-        <li><strong>Python:</strong> NumPy, SciPy, Matplotlib, Pandas</li>
-        <li><strong>Other:</strong> MATLAB, Modelica, LaTeX, Git, Gitlab, CMake</li>
+        <li><strong>C++:</strong> Modern C++, STL, Eigen
+                        <div class="familiarity-item"> <em>Familiarity:</em> CMake, Qt, CUDA</div>
+        </li>
+        <li><strong>Python:</strong> NumPy, SciPy, Matplotlib
+                        <div class="familiarity-item"> <em>Familiarity:</em> Pandas, JAX, Optax</div>
+        </li>
+                    <li><strong>Other:</strong> MATLAB, Modelica, LaTeX, Git, Gitlab & GitHub
+                        <div class="familiarity-item"> <em>Familiarity:</em> Lua, Octave</div>
+        </li>
       </ul>
       <h3>Core Competencies</h3>
       <ul class="skills-list">
@@ -243,7 +249,7 @@ import Layout from '../layouts/Layout.astro';
         <li>Applied Mathematics</li>
         
         <li>Scientific Computing</li>
-        <li>Research & Product Development</li>
+        <li>Research & Development</li>
         <li>Leadership & Project Management</li>
       </ul>
     </section>
@@ -396,6 +402,13 @@ import Layout from '../layouts/Layout.astro';
   li {
     margin-bottom: 0.75rem;
   }
+  
+
+  .familiarity-item {
+    margin-top: 0.5rem;
+    color: var(--text-secondary);
+  }
+
   .skills-list, .awards, .publications, .contact-list {
     list-style-type: none;
     padding-left: 0;
