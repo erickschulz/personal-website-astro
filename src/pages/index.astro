@@ -20,17 +20,17 @@ class="expertise-card">
         <a href="#applied-math-details" class="details-link">More <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="expertise-card">
-        <h3>Product Development</h3>
-        <p>Experience building state-of-the-art solvers/tools packaged into ready-to-use and <strong>user-friendly features/products</strong>.</p>
-        <a href="#product-dev-details" class="details-link">More <i class="fas fa-arrow-right"></i></a>
-    
-  </div>
-      <div class="expertise-card">
         <h3>Research</h3>
         <p>Years of research experience.
 <strong>Published peer-reviewed</strong> research and presented at international conferences.</p>
         <a href="#research-details" class="details-link">More <i class="fas fa-arrow-right"></i></a>
       </div>
+      <div class="expertise-card">
+        <h3>Product Development</h3>
+        <p>Experience building state-of-the-art solvers/tools packaged into ready-to-use and <strong>user-friendly features/products</strong>.</p>
+        <a href="#product-dev-details" class="details-link">More <i class="fas fa-arrow-right"></i></a>
+    
+  </div>
       <div class="expertise-card">
         <h3>Leadership</h3>
         <p><strong>Lead a team</strong> of talented professional scientists.
@@ -65,55 +65,20 @@ for the next-generation of simulation tools/products for power-electronics syste
       <div id="applied-math-details" class="details-section">
         <h2>Applied Mathematics</h2>
           <p>
-              My expertise in 
+ For more information on my current work on numerical methods for <strong>differential algebraic equations (DAEs)</strong> and <strong>optimization</strong> applied to <strong>circuit simulation</strong>,
+              see about R&D below and be on the look-out for the release of PLECS 5.0!
+ <br><br>             My expertise in 
 numerical methods for partial differential equations, such as <strong>finite element methods (FEM)
               and boundary element methods (BEM)</strong>, stems originally from my studies and ongoing teaching duties.
 <br><br> During my <strong>PhD</strong>, I carried out research at the interface between <strong>numerical methods and geometry</strong>.
 The development of new models for electromagnetism based on the Hodge-Dirac and
               Hodge-Laplace operators on manifolds led to surprising discoveries about the structure of first-kind boundary integral equations.
 <br><br>My collaboration with Ralf Hiptmair continues to this day, and I am looking foward to new exciting research and discoveries.
-<br><br> For more information on my current work on numerical methods for <strong>differential algebraic equations (DAEs)</strong> and <strong>optimization</strong> applied to <strong>circuit simulation</strong>,
-              see about R&D below and be on the look-out for the release of PLECS 5.0!
 </p>
 
           <div class="button-group">
               <a href="/phd_preface" class="button green-button"><i class="fas fa-book-open"></i> Read my PhD Preface</a>
               <a href="https://scholar.google.com/citations?user=_46eNUcAAAAJ&hl=en" class="button green-button"><i class="fas fa-graduation-cap"></i> Publications</a>
-          </div>
-      </div>
-      <div id="product-dev-details" class="details-section">
-        <h2>Product Development</h2>
-          <p>Over the past 
-years, my most significant project has been developing a new <strong>SPICE solver</strong> as part of Plexim's contribution to PowerizeD, a large consortium project 
-              partially funded by Horizon Europe (for research and innovation).
-Everything, 
-              from the <strong>simulation engine to the architecture, the parser, the UI integration and more</strong>, has been written from scratch and re-invented by a team of
-              talented scientists and software engineers.
-The new product redefines state-of-the-art and enables a type of transient analysis simulation (of mixed-signal circuits
-              and power-electronic systems) that hasn't been previously possible with existing solutions.
-</p>
-          <p>
-              During my early days at Plexim, I worked on thermal modeling, particularly on <strong>surrogate models</strong> for thermal paths in semicondutors.
-Since then, I have been periodically asked to <strong>fit</strong>, or re-fit with better model identification, thermal networks to impedance data.
-So I recently made a simple Python package that application engineers can use to proceed with their thermal networks alchemy.
-</p>
-          <p>
-              Another side project that I have been enjoying a lot recently is the implementation of a native feature in the software PLECS that works
-              like Telescope in Neovim, Projectile in Emacs, or Spotlight and Raycast on macOS, for engineers to supercharge their workflow without having to be superusers.
-It allows them
-              to quickly <strong>fuzzy-search</strong> from anywhere their .plecs model files, launch commands and open tools such as the documentation and integrated console all within one search bar, greatly
-              increasing discoverability of the software's feature.
-</p>
-          <div class="button-group">
-              <a href="https://thermal-network.pages.dev/" target="_blank" rel="noopener noreferrer" class="button green-button">
-                  <i class="fas fa-file-alt"></i>
-                  <span>Thermal Network - Docs</span>
-              </a>
-              
-<a href="https://github.com/erickschulz/thermal-network" target="_blank" rel="noopener noreferrer" class="button green-button">
-                  <i class="fab fa-github"></i>
-                  <span>Thermal Network - Repo</span>
-              </a>
           </div>
       </div>
       <div id="research-details" class="details-section">
@@ -143,6 +108,41 @@ In order to acheive this, our team has developed new algorithms and modernized t
           <div class="button-group">
               <a href="https://www.plexim.com/" class="button green-button"><i class="fas fa-external-link-alt"></i> Plexim's Website</a>
               <a href="https://scholar.google.com/citations?user=_46eNUcAAAAJ&hl=en" class="button green-button"><i class="fas fa-graduation-cap"></i> Publications</a>
+          </div>
+      </div>
+      <div id="product-dev-details" class="details-section">
+        <h2>Product Development</h2>
+          <p>Over the past 
+years, my most significant project has been developing a new type of <strong>SPICE circuits solver</strong> as part of Plexim's contribution to PowerizeD, a large consortium project 
+              partially funded by Horizon Europe (for research and innovation).
+Everything, 
+              from the <strong>simulation engine to the architecture, the parser, the UI integration and more</strong>, has been written from scratch and re-invented by a team of
+              talented scientists and software engineers.
+The new product redefines state-of-the-art and enables a type of transient analysis simulation (of mixed-signal circuits
+              and power-electronic systems) that hasn't been previously possible with existing solutions.
+</p>
+          <p>
+              During my early days at Plexim, I worked on thermal modeling, particularly on <strong>surrogate models</strong> for thermal paths in semicondutors.
+Since then, I have been periodically asked to <strong>fit</strong>, or re-fit with better model identification, thermal networks to impedance data.
+So I recently made a simple Python package that application engineers can use to proceed with their thermal networks alchemy.
+</p>
+          <p>
+              Another side project that I have been enjoying a lot recently is the implementation of a native feature in the software PLECS that works
+              like Telescope in Neovim, Projectile in Emacs, or Spotlight and Raycast on macOS, for engineers to supercharge their workflow without having to be superusers.
+It allows them
+              to quickly <strong>fuzzy-search</strong> from anywhere their .plecs model files, launch commands and open tools such as the documentation and integrated console all within one search bar, greatly
+              increasing discoverability of the software's feature.
+</p>
+          <div class="button-group">
+              <a href="https://thermal-network.pages.dev/" target="_blank" rel="noopener noreferrer" class="button green-button">
+                  <i class="fas fa-file-alt"></i>
+                  <span>Thermal Network - Docs</span>
+              </a>
+              
+<a href="https://github.com/erickschulz/thermal-network" target="_blank" rel="noopener noreferrer" class="button green-button">
+                  <i class="fab fa-github"></i>
+                  <span>Thermal Network - Repo</span>
+              </a>
           </div>
       </div>
       <div id="teaching-details" class="details-section">
